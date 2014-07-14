@@ -1,0 +1,274 @@
+/*
+
+Responsive Mobile Menu v1.0
+Plugin URI: responsivemobilemenu.com
+
+Author: Sergio Vitov
+Author URI: http://xmacros.com
+
+License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
+
+*/
+.rmm
+{
+	display:block;
+	position:relative;
+	width:100%;
+	padding:0px;
+	margin:0 auto !important;
+	text-align: center;
+	line-height:19px !important;
+	z-index: 1001;
+	background: white;
+}
+
+.rmm *
+{
+	-webkit-tap-highlight-color:transparent !important;
+}
+
+.rmm a
+{
+	color:#aaa;
+	text-decoration:none;
+}
+
+.rmm .rmm-main-list, .rmm .rmm-main-list li
+{
+	margin:0px;
+	padding:0px;
+	float: left;
+}
+
+.rmm ul
+{
+	display:block;
+	width:auto !important;
+	margin:0 auto !important;
+	overflow:hidden;
+	list-style:none;
+}
+
+.rmm ul ul
+{
+	display: none;
+	padding: 0;
+	background: #1e1e1e;
+}
+
+.rmm ul li:hover ul
+{
+	display: block;
+}
+
+.rmm ul ul li
+{
+	float: left;
+	clear: left;
+	position: relative;
+}
+
+.rmm .rmm-main-list li
+{
+	display:inline;
+	padding: 0;
+	margin:0px !important;
+	float: left;
+}
+
+.rmm .rmm-main-list li.home
+{
+	padding: 0;
+}
+
+.rmm .rmm-main-list li.home a
+{
+	padding: 0 10px !important;
+}
+
+.rmm-toggled
+{
+	display:none;
+	/*width:100%;*/
+	position:relative;
+	overflow:hidden;
+	margin:0 auto !important;
+}
+
+.rmm-button:hover
+{
+	cursor:pointer;
+}
+
+.rmm .rmm-toggled ul
+{
+	display:none;
+	margin:0px !important;
+	padding:0px !important;
+}
+
+.rmm .rmm-toggled ul li
+{
+	display:block;
+	margin:0 auto !important;
+}
+
+/* MINIMAL STYLE */
+
+.rmm.minimal a:hover
+{
+	color: darkcyan;
+	text-decoration: line-through;
+}
+
+rmm.minimal ul ul > a:hover
+{
+	display: block;
+}
+
+.rmm.minimal .rmm-main-list li a
+{
+	display:inline-block;
+	padding:25px 20px;
+	margin:0px -3px 0px -3px;
+}
+
+.rmm.minimal .rmm-toggled
+{
+	min-height:36px;
+	padding: 10px 2.4%;
+	cursor: pointer;
+	border: 1px solid #aaa;
+	background: black;
+	color: #aaa;
+}
+
+.rmm.minimal .rmm-toggled-controls
+{
+	display:block;
+	height:36px;
+	text-align:left;
+	position:relative;
+	margin-bottom: 5px;
+}
+
+.rmm.minimal .rmm-toggled-title
+{
+	position:relative;
+	top:9px;
+	left:9px;
+	font-size:16px;
+}
+
+.rmm.minimal .rmm-button
+{
+	display:block;
+	position:absolute;
+	right:8px;
+	top:8px;
+}
+
+.rmm.minimal .rmm-button span
+{
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: #f5f5f5;
+	-webkit-border-radius: 1px;
+	 -moz-border-radius: 1px;
+		  border-radius: 1px;
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	 -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+		  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.rmm.minimal .rmm-button span + span {
+  margin-top: 6px;
+}
+
+.rmm.minimal .rmm-toggled ul li a
+{
+	display:block;
+	width:100%;
+	text-align:center;
+	padding:10px 0px 10px 0px;
+	border-bottom:1px solid #1e1e1e;
+}
+
+.rmm.minimal .rmm-toggled ul li:first-child a
+{
+	border-top:1px solid #1e1e1e;
+}
+
+.rmm ul li.active a
+{
+	color: darkcyan;
+	text-decoration: line-through;
+}
+
+.rmm ul li.active ul a
+{
+	color: #aaa;
+	text-decoration: none;
+}
+
+.rmm ul li.active a::before,
+.rmm ul li.active a::after
+{
+	display: inline-block;
+	opacity: 1;
+}
+
+.rmm ul li.active ul a::before,
+.rmm ul li.active ul a::after
+{
+	display: inline-block;
+	opacity: 0;
+}
+
+@media all and (min-width: 830px)
+{
+	.rmm ul ul
+	{
+		position: absolute;
+		top: 69px;
+		display: none;
+	}
+}
+
+@media all and (max-width: 829px)
+{
+	.rmm ul li a
+	{
+	}
+	
+	.rmm ul ul
+	{
+		display: none;
+	}
+	
+	.rmm ul li.active ul
+	{
+		display: block !important;
+	}
+	
+	.rmm ul ul li
+	{
+		width: 100%;
+	}
+	
+	.rmm ul ul li a
+	{
+		border-bottom: none !important;
+	}
+	
+	.rmm ul ul li:first-child a
+	{
+		border-top: none !important;
+	}
+	
+	.rmm ul ul li:last-child a
+	{
+		border-bottom: 1px solid #1e1e1e !important;
+	}
+}

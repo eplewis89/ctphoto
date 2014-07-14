@@ -1,0 +1,11 @@
+/*   
+Theme Name: ctphoto
+Description: chris thomas photography theme
+Author: Erin Lewis
+Version: 1
+*/
+
+@import url('css/reset.css');
+@import url('css/ctphoto.css');
+@import url('css/menu.css');
+@import url('css/slider.css');
