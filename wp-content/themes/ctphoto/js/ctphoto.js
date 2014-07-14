@@ -1,5 +1,9 @@
+var currentpage = '';
+
 $(document).ready(function() {
 	SetupSlideshow();
+	
+	SetupMenu();
 });
 
 function SetupSlideshow() {
@@ -10,4 +14,11 @@ function SetupSlideshow() {
       $('.slideshow :first-child').fadeOut('slow');
 	  $('.slideshow :first-child').appendTo('.slideshow');
 	  }, 5000);
+}
+
+function SetupMenu()
+{
+	if (currentpage != '') {
+		alert(currentpage);
+	}
 }

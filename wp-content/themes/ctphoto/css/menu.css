@@ -212,20 +212,6 @@ rmm.minimal ul ul > a:hover
 	text-decoration: none;
 }
 
-.rmm ul li.active a::before,
-.rmm ul li.active a::after
-{
-	display: inline-block;
-	opacity: 1;
-}
-
-.rmm ul li.active ul a::before,
-.rmm ul li.active ul a::after
-{
-	display: inline-block;
-	opacity: 0;
-}
-
 @media all and (min-width: 830px)
 {
 	.rmm ul ul

@@ -19,13 +19,25 @@
 		wp_get_archives('type=monthly&format=link');
 		wp_head();
 	?>
+	
+	<script type="text/javascript">
+		currentpage = '<?php
+			if (empty($post->post_parent))
+			{
+				echo get_query_var('pagename');
+			}
+			else
+			{
+				echo get_the_title($post->post_parent);
+			}
+			?>';
+	</script>
 </head>
 
 <body>
     <header>
 		<nav>
-			<?php print naked_nav($post);
-			?>
+			<?php print naked_nav($post); ?>
 		</nav>
     </header>
 

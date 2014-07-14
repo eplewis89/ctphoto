@@ -282,12 +282,12 @@ body .slider *
 	
     .slider .slide_content_wrap h4
 	{
-		bottom: 35;
+		bottom: 50px;
 	}
 	
     .slider .slide_content_wrap p
 	{
-		bottom: 0;
+		bottom: 15px;
 	}
 	
     .slider .slide_content_wrap a
@@ -314,7 +314,7 @@ body .slider *
 {
     .slider .slide_content_wrap h4
 	{
-		bottom: 0 !important;
+		bottom: 15px !important;
 	}
 	
     .slider .slide_content_wrap p
