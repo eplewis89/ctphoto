@@ -19,6 +19,7 @@ function SetupSlideshow() {
 function SetupMenu()
 {
 	if (currentpage != '') {
-		alert(currentpage);
+		$('nav * a').removeClass('active');
+		$('a[href=$"/' + currentpage + '/"]').addClass('active');
 	}
 }

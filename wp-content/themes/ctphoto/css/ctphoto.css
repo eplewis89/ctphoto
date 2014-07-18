@@ -15,11 +15,20 @@ h3
 	font-size: 19px;
 }
 
-.maincontent
+content
 {
-	height: 250px;
 	float: left;
 	clear: left;
+	width: 100%;
+}
+
+footer
+{
+	float: left;
+	clear: left;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 .grid
@@ -29,7 +38,7 @@ h3
 	float: left;
 	clear: left;
 }
-	
+
 @media all and (min-width: 830px)
 {	
 	header
@@ -66,6 +75,7 @@ h3
 		float: left;
 		width: 95%;
 		margin: 0 1%;
+		margin-bottom: 30px;
 		padding: 1.5%;
 		background: #1e1e1e;
 		min-height: 250px;

@@ -37,8 +37,7 @@ body .slider *
     top:0;
     left:0;
     z-index: 0;
-    width:95%;
-	margin: 0 2.5%;
+    width:100%;
 }
 
 .slider .slide img

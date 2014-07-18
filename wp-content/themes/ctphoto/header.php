@@ -3,6 +3,7 @@
 
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+	<link rel="icon" type="image/png" href="<?php echo get_site_url(); ?>/favicon.png">
 
 	<title><?php if(is_home()) bloginfo('name'); else wp_title('Chris Thomas Photo | '); ?></title>
 
@@ -41,4 +42,4 @@
 		</nav>
     </header>
 
-    <div id="primaryContent">
+    <content>

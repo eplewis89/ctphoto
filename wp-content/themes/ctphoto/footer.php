@@ -1,12 +1,10 @@
-	  </div>
+	</content>
 
-	  <div id="secondaryContent">
-		<?php get_sidebar(); ?>
-	  </div>
-
-	  <div id="footer">
+	<footer>
+		<p>chris thomas photography © <?php echo date('Y'); ?></p>
 		<?php wp_footer(); ?>
-	  </div>
+	</footer>
 
-  </body>
+</body>
+
 </html>
