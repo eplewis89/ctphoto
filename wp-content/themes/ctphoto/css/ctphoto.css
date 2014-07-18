@@ -1,11 +1,18 @@
 body
 {
 	min-width: 305px;
-	font: 12px/18px Courier,Courier New,monospace;
-	font-size:12px;
+	font: 12px/18px 'Didact Gothic';
+	font-size:1em;
 	text-transform: lowercase;
 	background-color: black;
 	color: #ddd;
+}
+
+h3
+{
+	color: darkcyan;
+	font-weight: bold;
+	font-size: 19px;
 }
 
 .maincontent
@@ -15,6 +22,14 @@ body
 	clear: left;
 }
 
+.grid
+{
+	width: 80%;
+	margin: 30px 10%;
+	float: left;
+	clear: left;
+}
+	
 @media all and (min-width: 830px)
 {	
 	header
@@ -32,18 +47,71 @@ body
 		left: 0;
 		z-index: 1001;
 	}
+	
+	.gridleft, .gridright
+	{
+		float: left;
+		width: 45%;
+		margin: 0 1%;
+		padding: 1.5%;
+		background: #1e1e1e;
+		min-height: 250px;
+	}
 }
 
 @media all and (max-width: 829px) and (min-width: 420px)
 {
+	.gridleft, .gridright
+	{
+		float: left;
+		width: 95%;
+		margin: 0 1%;
+		padding: 1.5%;
+		background: #1e1e1e;
+		min-height: 250px;
+	}
 }
 
 @media all and (max-width: 419px)
 {
-}
+	.grid
+	{
+		width: 100%;
+		margin: 30px 0;
+		float: left;
+		clear: left;
+	}
 	
+	.gridleft, .gridright
+	{
+		float: left;
+		width: 97%;
+		margin: 0;
+		margin-bottom: 30px;
+		padding: 1.5%;
+		background: #1e1e1e;
+		min-height: 150px;
+	}
+}
+
+a
+{
+	color: #aaa;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: darkcyan !important;
+	text-decoration: line-through !important;
+}
+
+a::before,
+a::after,
 nav a::before,
 nav a::after,
+a.readmore::before,
+a.readmore::after,
 nav li.active ul a::before, 
 nav li.active ul a::after
 {
@@ -60,8 +128,12 @@ nav .home a::after
 	display: none !important;
 }
 
+a:hover::before,
+a:hover::after,
 nav a:hover::before,
 nav a:hover::after, 
+a.readmore:hover::before,
+a.readmore:hover::after,
 nav a:focus::before, 
 nav a:focus::after,
 nav li.active a::before, 
@@ -77,7 +149,9 @@ nav li.active ul a:focus::after
 	transform: translateX(0px);
 }
 
+a::before,
 nav a::before,
+a.readmore::before,
 nav li.active ul a::before
 {
 	margin-right: 10px;
@@ -87,7 +161,9 @@ nav li.active ul a::before
 	transform: translateX(20px);
 }
 
+a::after,
 nav a::after,
+a.readmore::after,
 nav li.active ul a::after
 {
 	margin-left: 10px;

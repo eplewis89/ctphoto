@@ -50,9 +50,9 @@ function adaptMenu() {
 	/* 	toggle menu on resize */
 	
 	$('.rmm').each(function() {
-			var $width = 830;//$(this).css('max-width');
-			//$width = $width.replace('px', ''); 
-			if ( $(this).parent().width() < $width ) {
+			var $width = $(this).css('max-width');
+			$width = $width.replace('px', ''); 
+			if ( $(this).width() < 830 ) {
 				$(this).children('.rmm-main-list').hide(0);
 				$(this).children('.rmm-toggled').show(0);
 			}

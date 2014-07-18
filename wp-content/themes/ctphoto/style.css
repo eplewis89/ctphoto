@@ -5,7 +5,9 @@ Author: Erin Lewis
 Version: 1
 */
 
+@import url('css/fonts.css');
 @import url('css/reset.css');
 @import url('css/ctphoto.css');
 @import url('css/menu.css');
 @import url('css/slider.css');
+@import url('css/ie.css');
