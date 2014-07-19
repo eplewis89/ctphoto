@@ -53,7 +53,7 @@ License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 {
 	display: none;
 	padding: 0;
-	background: #1e1e1e;
+	background: #333;
 }
 
 .rmm ul li:hover ul
@@ -191,12 +191,12 @@ rmm.minimal ul ul > a:hover
 	width:100%;
 	text-align:center;
 	padding:10px 0px 10px 0px;
-	border-bottom:1px solid #1e1e1e;
+	border-bottom:1px solid #333;
 }
 
 .rmm.minimal .rmm-toggled ul li:first-child a
 {
-	border-top:1px solid #1e1e1e;
+	border-top:1px solid #333;
 }
 
 .rmm ul li.active a
@@ -254,6 +254,6 @@ rmm.minimal ul ul > a:hover
 	
 	.rmm ul ul li:last-child a
 	{
-		border-bottom: 1px solid #1e1e1e !important;
+		border-bottom: 1px solid #333 !important;
 	}
 }

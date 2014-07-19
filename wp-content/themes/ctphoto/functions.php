@@ -29,7 +29,7 @@ function naked_nav($post = 0)
 	$params = "title_li=&depth=2&echo=0&post_type=page&exclude=22";
 
 	// always show top level
-	$output .= '<div class="rmm minimal"><ul><li class="home"><a href="' . get_site_url() . '"><img id="logo" src="' . get_template_directory_uri() . '/img/logo.jpg" alt="home logo" /></a></li>';
+	$output .= '<div class="rmm minimal"><ul><li class="home"><a href="' . get_site_url() . '"><img id="logo" src="' . get_template_directory_uri() . '/img/logo.png" alt="home logo" /></a></li>';
 	$output .= wp_list_pages($params);
 	$output .= '</ul></div>';
 	return $output;
