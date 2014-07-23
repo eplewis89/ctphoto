@@ -22,17 +22,28 @@
 * @param obj post
 * @return string (html)
 */
+
+add_theme_support( 'nav-menus' );
+
 function naked_nav($post = 0)
 {
-	$output = "";
-	$subNav = "";
-	$params = "title_li=&depth=2&echo=0&post_type=page&exclude=22";
+	$home = '<li class="home"><a href="' . get_site_url() . '"><img id="logo" src="' . get_template_directory_uri() . '/img/logo.png" alt="home logo" />';
 
-	// always show top level
-	$output .= '<div class="rmm minimal"><ul><li class="home"><a href="' . get_site_url() . '"><img id="logo" src="' . get_template_directory_uri() . '/img/logo.png" alt="home logo" /></a></li>';
-	$output .= wp_list_pages($params);
-	$output .= '</ul></div>';
-	return $output;
+	$args = array(
+                'menu'            => 'main-menu', 
+                'container'       => '', 
+                'container_class' => 'false', 
+                'container_id'    => '',
+                'menu_class'      => '', 
+                'echo'            => true,
+                'fallback_cb'     => 'wp_page_menu',
+                'before'          => '',
+                'after'           => '',
+                'items_wrap'      => '<div class="rmm minimal"><ul>' . $home . '%3$s</ul></div>',
+                'depth'           => 0,
+      );
+
+	return wp_nav_menu($args);
 }
 
 /**
