@@ -23,23 +23,6 @@
 	
 	<script type="text/javascript">
 		currentpage = '<?php if (empty($post->post_parent)) { echo get_query_var('pagename'); } else { echo get_the_title($post->post_parent); } ?>';
-
-		$(document).ready(function() {
-			var $container = $('#gallery-container').isotope({
-				// main isotope options
-				itemSelector: '.item',
-				layoutMode: 'cellsByRow',
-				// options for cellsByRow layout mode
-				cellsByRow: {
-					columnWidth: 200,
-					rowHeight: 150
-				},
-				// options for masonry layout mode
-				masonry: {
-					columnWidth: '.grid-sizer'
-				}
-			});
-		});
 	</script>
 </head>
 

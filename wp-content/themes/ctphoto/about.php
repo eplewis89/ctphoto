@@ -1,14 +1,14 @@
 <?php
 
 /*
-Template Name: Gallery Page
+Template Name: About Page
 */
 
   get_header();
 
-  $args = new array ( 'category' => 'test' );
+  $args = new array ( 'category' => 'gallery' );
 
-  $the_query = new WP_Query($args);
+  $the_query = new WP_Query('category_name=categoryname');
 
   if ($the_query->have_posts()) : while ($the_query->have_posts()) : the_post();
   ?>

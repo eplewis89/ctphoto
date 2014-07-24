@@ -1,6 +1,6 @@
 body
 {
-	min-width: 305px;
+	min-width: 320px;
 	font: 12px/18px 'Didact Gothic';
 	font-size:1em;
 	text-transform: lowercase;
@@ -37,6 +37,72 @@ footer
 	margin: 30px 10%;
 	float: left;
 	clear: left;
+}
+
+.post-filter
+{
+	margin: 0;
+	margin-top: -1px;
+	padding: 30px 10%;
+	background: #2a2a2a;
+}
+
+.post-filter p
+{
+	float: left;
+	padding: 0 10px;
+	font-size: 0.75em;
+}
+
+.post-filter a
+{
+	float: left;
+	font-size: 0.75em;
+}
+
+.post-item
+{
+	display: none;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.post-item:last-child
+{
+	margin-right: 0;
+}
+
+.isotope-item
+{
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item
+{
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item
+{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope
+{
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item
+{
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
 }
 
 @media all and (min-width: 830px)
@@ -80,6 +146,17 @@ footer
 		background: #333;
 		min-height: 250px;
 	}
+
+	.post-filter a
+	{
+		width: 50%;
+	}
+
+	.post-filter p
+	{
+		width: 100%;
+		padding: 0;
+	}
 }
 
 @media all and (max-width: 419px)
@@ -101,6 +178,28 @@ footer
 		padding: 1.5%;
 		background: #333;
 		min-height: 150px;
+	}
+
+	.post-item
+	{
+		margin: 0 10px;
+	}
+
+	.post-filter
+	{
+		padding: 10px 0;
+		margin: 0;
+	}
+
+	.post-filter a,
+	.post-filter p
+	{
+		width: 100%;
+		float: left;
+		clear: left;
+		text-align: center;
+		margin: 5px 0;
+		padding: 0;
 	}
 }
 

@@ -81,6 +81,12 @@ License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 	padding: 0;
 }
 
+li.home img
+{
+	height: 69px;
+	cursor: pointer;
+}
+
 .rmm .rmm-main-list li.home a
 {
 	padding: 0 10px !important;
@@ -139,7 +145,7 @@ rmm.minimal ul ul > a:hover
 	padding: 10px 2.4%;
 	cursor: pointer;
 	border: 1px solid #aaa;
-	background: black;
+	background: #1e1e1e;
 	color: #aaa;
 }
 
