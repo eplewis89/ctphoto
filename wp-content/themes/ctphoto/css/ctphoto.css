@@ -209,7 +209,8 @@ a
 	text-decoration: none;
 }
 
-a:hover
+a:hover,
+.post-filter a.active
 {
 	color: darkcyan !important;
 	text-decoration: line-through !important;
@@ -247,6 +248,8 @@ nav a:focus::before,
 nav a:focus::after,
 nav li.active a::before, 
 nav li.active a::after,
+.post-filter a.active::before,
+.post-filter a.active::after,
 nav li.active ul a:hover::before, 
 nav li.active ul a:hover::after,
 nav li.active ul a:focus::before, 
