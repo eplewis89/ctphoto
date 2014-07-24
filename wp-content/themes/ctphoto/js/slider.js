@@ -23,6 +23,10 @@ function slider() {
         textControl['init']();
         sizeControl['bindControls']();
         mainControl['bindControls']();
+        
+        jQuery(sliderInstance['instance'])['css']({
+            height: jQuery(sliderInstance['instance'])['find']('.slide:first')['height']()
+        });
     };
 
     var sizeControl = {
@@ -201,11 +205,11 @@ function slider() {
 				
                 jQuery(sliderInstance['instance'] + ' .slide:eq(' + sliderInstance['cs'] + ')')['fadeIn']({
                     duration: 1500,
-                    easing: 'swing'
+                    easing: 'easeInOutSine'
                 });
 				
                 jQuery(sliderInstance['instance'])['animate']({
-                    height: jQuery(sliderInstance['instance'] + ' .slide:first img')['height']()
+                    //height: jQuery(sliderInstance['instance'] + ' .slide:first img')['height']()
                 }, {
                     duration: 750,
                     easing: 'easeInOutExpo',

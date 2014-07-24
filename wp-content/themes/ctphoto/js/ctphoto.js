@@ -27,7 +27,10 @@ $(window).load(function() {
 				duration: 500,
 				easing: 'linear',
 				queue: false
-			}
+			},
+		    masonry: {
+		      columnWidth: 100
+		    }
 		});
 
 		return false;

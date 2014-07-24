@@ -54,6 +54,7 @@ License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 	display: none;
 	padding: 0;
 	background: #333;
+	width: auto;
 }
 
 .rmm ul li:hover ul
@@ -63,9 +64,20 @@ License: CC BY 3.0 http://creativecommons.org/licenses/by/3.0/
 
 .rmm ul ul li
 {
+	width: 100%;
 	float: left;
 	clear: left;
 	position: relative;
+}
+
+.rmm ul ul li:hover
+{
+	background: #444;
+}
+
+.rmm ul ul li a
+{
+	width:85%;
 }
 
 .rmm .rmm-main-list li
@@ -241,6 +253,7 @@ rmm.minimal ul ul > a:hover
 	.rmm ul li.active ul
 	{
 		display: block !important;
+		height: auto !important;
 	}
 	
 	.rmm ul ul li

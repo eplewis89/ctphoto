@@ -49,7 +49,7 @@
     {
 ?>
       <div class="post-filter grid">
-        <p>category: <?php echo get_cat_name($curr_cat_id) ?></p>
+        <p><?php echo get_cat_name($curr_cat_id) ?></p>
       </div>
 <?php
     }
@@ -72,9 +72,8 @@
         }
 ?>
         <div class="post-item <?php echo $sub_category; ?>" id="post-<?php the_ID(); ?>">
-          <img src="" height="250px" width="300px" alt="picture" />
+          <?php the_post_thumbnail(); ?>
           <h1 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-          <p class="postMeta"><?php edit_post_link(__('Edit'), ''); ?></p>
         </div>
 
 <?php
@@ -83,7 +82,7 @@
     else
     {
 ?>
-      <p>Sorry, no posts matched your criteria.</p>
+      <p class="post-item">No posts here! Try again later.</p>
 <?php
     }
 ?>

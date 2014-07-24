@@ -22,7 +22,7 @@
 	?>
 	
 	<script type="text/javascript">
-		currentpage = '<?php if (empty($post->post_parent)) { echo get_query_var('pagename'); } else { echo get_the_title($post->post_parent); } ?>';
+		console.log('<?php echo $_SERVER['REQUEST_URI']; ?>');
 	</script>
 </head>
 

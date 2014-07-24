@@ -1,3 +1,8 @@
+html
+{
+	margin: 0 !important;
+}
+
 body
 {
 	min-width: 320px;
@@ -6,6 +11,15 @@ body
 	text-transform: lowercase;
 	background-color: #1e1e1e;
 	color: #ddd;
+}
+
+header
+{
+	position: fixed !important;
+	top: 0;
+	width: 100% !important;
+	z-index: 2000;
+	background: #1e1e1e !important;
 }
 
 h3
@@ -17,9 +31,11 @@ h3
 
 content
 {
+	margin-top: 69px;
 	float: left;
 	clear: left;
 	width: 100%;
+	min-height: 500px;
 }
 
 footer
@@ -39,10 +55,14 @@ footer
 	clear: left;
 }
 
+#post-container
+{
+	min-height: 200px;
+}
+
 .post-filter
 {
-	margin: 0;
-	margin-top: -1px;
+	margin: 0 !important;
 	padding: 30px 10%;
 	background: #2a2a2a;
 }
@@ -58,10 +78,12 @@ footer
 {
 	float: left;
 	font-size: 0.75em;
+	margin: 0 5px;
 }
 
 .post-item
 {
+	float: left;
 	display: none;
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -70,6 +92,23 @@ footer
 .post-item:last-child
 {
 	margin-right: 0;
+}
+
+p.post-item
+{
+	width: 100%;
+	text-align: center;
+	margin: 70px 0 !important;
+}
+
+.post-item h1
+{
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	padding: 10px 20px;
+	width: 150px;
+	background: rgba(0,0,0,0.5);
 }
 
 .isotope-item
@@ -110,7 +149,7 @@ footer
 	header
 	{
 		margin: 0 auto;
-		height: 70px;
+		height: 69px;
 	}
 	
 	nav
@@ -136,6 +175,18 @@ footer
 
 @media all and (max-width: 829px) and (min-width: 420px)
 {
+	content
+	{
+		min-height: auto;
+		margin-top: 63px;
+	}
+
+	.grid
+	{
+		width: 90%;
+		margin: 30px 5%;
+	}
+
 	.gridleft, .gridright
 	{
 		float: left;
@@ -147,9 +198,14 @@ footer
 		min-height: 250px;
 	}
 
+	.post-filter
+	{
+		padding: 30px 5%;
+	}
+
 	.post-filter a
 	{
-		width: 50%;
+		width: 45%;
 	}
 
 	.post-filter p
@@ -157,10 +213,41 @@ footer
 		width: 100%;
 		padding: 0;
 	}
+
+	.post-item
+	{
+		width: 80%;
+		float: left;
+		clear: left;
+		margin: 0;
+		margin-bottom: 20px;
+		padding: 0 10%;
+	}
+
+	.post-item:last-child
+	{
+		margin-right: 0;
+	}
+
+	.post-item img,
+	.post-item h1,
+	.post-item p
+	{
+		float: left;
+	}
+
+	.post-item h1
+	{
+		left: 10%;
+	}
 }
 
 @media all and (max-width: 419px)
 {
+	content
+	{
+		margin-top: 63px;
+	}
 	.grid
 	{
 		width: 100%;
@@ -182,7 +269,19 @@ footer
 
 	.post-item
 	{
-		margin: 0 10px;
+		margin: 0 10% 20px !important;
+		width: 80%;
+	}
+
+	.post-item:last-child
+	{
+		margin-bottom: 0;
+	}
+
+	.post-item img
+	{
+		width: 100%;
+		height: auto;
 	}
 
 	.post-filter
