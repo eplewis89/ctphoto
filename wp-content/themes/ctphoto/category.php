@@ -30,14 +30,14 @@
 ?>
       <div class="post-filter grid">
         <p>filter</p>
-        <a href="#" data-filter="*" class="active">All Categories</a>
+        <a href="#" data-filter="*" class="active brackets">All Categories</a>
 <?php
         foreach($child_categories as $child_category)
         {
           if($child_category->category_parent == $current_category->cat_ID)
           {
 ?>
-            <a href="#" data-filter=".<?php echo $child_category->slug; ?>"><?php echo $child_category->cat_name; ?></a>
+            <a href="#" data-filter=".<?php echo $child_category->slug; ?>" class="brackets"><?php echo $child_category->cat_name; ?></a>
 <?php
           }
         }

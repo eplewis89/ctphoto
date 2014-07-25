@@ -107,10 +107,10 @@ li.home img
 .rmm-toggled
 {
 	display:none;
-	/*width:100%;*/
 	position:relative;
 	overflow:hidden;
 	margin:0 auto !important;
+	cursor: pointer;
 }
 
 .rmm-button:hover
@@ -168,6 +168,7 @@ rmm.minimal ul ul > a:hover
 	text-align:left;
 	position:relative;
 	margin-bottom: 5px;
+	cursor: pointer;
 }
 
 .rmm.minimal .rmm-toggled-title
@@ -175,6 +176,7 @@ rmm.minimal ul ul > a:hover
 	position:relative;
 	top:9px;
 	left:9px;
+	cursor: pointer;
 }
 
 .rmm.minimal .rmm-button
@@ -183,6 +185,7 @@ rmm.minimal ul ul > a:hover
 	position:absolute;
 	right:8px;
 	top:8px;
+	cursor: pointer;
 }
 
 .rmm.minimal .rmm-button span
@@ -197,6 +200,7 @@ rmm.minimal ul ul > a:hover
 	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 	 -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 		  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	cursor: pointer;
 }
 
 .rmm.minimal .rmm-button span + span {

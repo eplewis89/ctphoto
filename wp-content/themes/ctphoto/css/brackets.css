@@ -1,0 +1,75 @@
+a:hover,
+a.active
+{
+	color: darkcyan !important;
+	text-decoration: line-through !important;
+}
+
+.post-filter a::before,
+.post-filter a::after,
+nav a::before,
+nav a::after,
+a.readmore::before,
+a.readmore::after,
+nav li.active ul a::before, 
+nav li.active ul a::after
+{
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.2s;
+}
+
+nav .home a::before,
+nav .home a::after
+{
+	display: none !important;
+}
+
+.post-filter a:hover::before,
+.post-filter a:hover::after,
+nav a:hover::before,
+nav a:hover::after, 
+a.readmore:hover::before,
+a.readmore:hover::after,
+nav a:focus::before, 
+nav a:focus::after,
+nav li.active a::before, 
+nav li.active a::after,
+.post-filter a.active::before,
+.post-filter a.active::after,
+nav li.active ul a:hover::before, 
+nav li.active ul a:hover::after,
+nav li.active ul a:focus::before, 
+nav li.active ul a:focus::after
+{
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.post-filter a::before,
+nav a::before,
+a.readmore::before,
+nav li.active ul a::before
+{
+	margin-right: 10px;
+	content: '[';
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+
+.post-filter a::after,
+nav a::after,
+a.readmore::after,
+nav li.active ul a::after
+{
+	margin-left: 10px;
+	content: ']';
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}

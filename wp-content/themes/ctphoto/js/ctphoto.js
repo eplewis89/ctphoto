@@ -1,5 +1,13 @@
 var currentpage = '';
 
+$(document).ready(function() {
+	SetupSlideshow();
+	
+	SetupMenu();
+
+	$(window).trigger('resize');
+});
+
 $(window).load(function() {
 	$('.post-item').fadeIn('fast');
 
@@ -37,10 +45,19 @@ $(window).load(function() {
 	});
 });
 
-$(document).ready(function() {
-	SetupSlideshow();
-	
-	SetupMenu();
+$(window).resize(function(){
+	var height = 650;
+
+	if (window.innerWidth <= 1020 && window.innerWidth > 829) {
+		height = window.innerWidth * 0.6372;
+	} else if (window.innerWidth <= 829) {
+		height = window.innerWidth * 0.612;
+	} else {
+		height = 650;
+	}
+
+	$('.about').css('height', height);
+	$('.background').css('height', height + 30);
 });
 
 function SetupSlideshow() {
