@@ -274,14 +274,14 @@ function slider() {
             var sliderContent = jQuery(sliderInstance['instance'] + ' .slide:eq(' + sliderInstance['cs'] + ') .slide_content_wrap');
 			
             sliderContent['css']({
-                top: '75%',
+                top: '85%',
                 left: 0,
                 display: 'block'
             });
 			
             sliderContent['css']({
                 marginTop: -1 * sliderContent['height']() / 2,
-                marginLeft: '8%'
+                marginLeft: '15%'
             });
 			
             jQuery(sliderInstance['instance'] + ' .slide:eq(' + sliderInstance['cs'] + ') .title')['fadeTo'](300, 1);
@@ -348,7 +348,7 @@ jQuery(document)['ready'](function () {
     new slider()['init']({
         unique: 'slider',
         duration: '1000',
-        hoverpause: '1',
+        hoverpause: '0',
         pause: '6000',
         arrows: '1',
         bullets: '1'

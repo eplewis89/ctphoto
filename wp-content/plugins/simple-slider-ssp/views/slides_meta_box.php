@@ -88,7 +88,7 @@
 							</td>
 						</tr>
 
-						<tr class="slide_type">
+						<tr class="slide_type" style="display:none;">
 							<td class="label">
 								<label>
 									<?php _e( 'Slide Type', SLIDER_PLUGIN_PREFIX ) ?>
@@ -109,26 +109,6 @@
 								</select>
 							</td>
 						</tr>
-
-						<tr class="slide_html"  data-id="<?php echo $key ?>">
-							<td class="label">
-								<label>
-									<?php _e( 'Slide HTML', 'ssp' ); ?>
-									
-								</label>
-								<p class="description">
-									<?php _e( 'This feature is only available in the pro version.', 'ssp' ) ?>
-								</p>
-								<a href="http://rocketplugins.com/wordpress-slider-plugin/" class="ssp-button">
-								<?php _e( 'Buy Now', 'ssp' ) ?></a>
-							</td>
-							<td>
-								<!--<textarea rows="10" name=''></textarea> -->
-								<img src="<?php echo plugins_url( 'images/html-feature.png', SLIDER_PLUGIN_MAIN_FILE ) ?>" />
-							</td>
-						</tr>
-
-
 
 						<tr class="slide_image"  data-id="<?php echo $key ?>">
 							<td class="label">

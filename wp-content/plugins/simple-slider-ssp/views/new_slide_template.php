@@ -57,25 +57,8 @@
 								<input name='' class='slide_label_input' type='text' value="" data-id="" />
 							</td>
 						</tr>
-						
-						<tr class="slide_label">
-							<td class="label">
-								<label>
-									<span class="required">*</span>
-									<?php _e( 'Slide Title', SLIDER_PLUGIN_PREFIX ); ?>
-								</label>
 
-								<p class="description">
-										<?php _e( 'What is displayed on the front page.', SLIDER_PLUGIN_PREFIX ); ?>
-								</p>
-								
-							</td>
-							<td>
-								<input name='' class='slide_label_input' type='text' value="" data-id="" />
-							</td>
-						</tr>
-
-						<tr class="slide_type">
+						<tr class="slide_type" style="display:none;">
 							<td class="label">
 								<label>
 									<span class="required">*</span>
@@ -95,24 +78,6 @@
 									</option>
 									<?php do_action( 'ssp_html_slide_type_select' ) ?>
 								</select>
-							</td>
-						</tr>
-
-						<tr class="slide_html" style="display: none" data-id="">
-							<td class="label">
-								<label>
-									<?php _e( 'Slide HTML', 'ssp' ); ?>
-									
-								</label>
-								<p class="description">
-									<?php _e( 'This feature is only available in the pro version.', 'ssp' ) ?>
-								</p>
-								<a href="http://rocketplugins.com/wordpress-slider-plugin/" class="ssp-button">
-								<?php _e( 'Buy Now', 'ssp' ) ?></a>
-							</td>
-							<td>
-								<!--<textarea rows="10" name=''></textarea> -->
-								<img src="<?php echo plugins_url( 'images/html-feature.png', SLIDER_PLUGIN_MAIN_FILE ) ?>" />
 							</td>
 						</tr>
 
