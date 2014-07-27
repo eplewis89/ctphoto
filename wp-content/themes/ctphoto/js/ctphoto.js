@@ -17,7 +17,7 @@ $(window).load(function() {
 		filter: '*',
 		animationOptions: {
 			duration: 500,
-			easing: 'linear',
+			easing: 'easeInOutExp',
 			queue: false
 		}
 	});
@@ -33,12 +33,9 @@ $(window).load(function() {
 			filter: selector,
 			animationOptions: {
 				duration: 500,
-				easing: 'linear',
+				easing: 'easeInOutExp',
 				queue: false
-			},
-		    masonry: {
-		      columnWidth: 100
-		    }
+			}
 		});
 
 		return false;

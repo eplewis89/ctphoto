@@ -69,7 +69,7 @@ footer
 	clear: left;
 	width: 100%;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .grid,
@@ -138,6 +138,36 @@ footer
 	display: none;
 	margin-right: 20px;
 	margin-bottom: 20px;
+}
+
+.overlay
+{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	color: transparent;
+	border: none;
+}
+
+.plus
+{
+    opacity:0;
+    -webkit-transition: opacity .25s ease;
+	-moz-transition: opacity .25s ease;
+	font-family:Helvetica;
+	font-weight:900;
+    color:rgba(255,255,255,.85);
+	font-size:96px;
+    text-align: center;
+    width: 100%;
+    float: left;
+    top: 45%;
+    position: absolute;
+}
+
+.post-item:hover .plus
+{
+	opacity:1;
 }
 
 .post-item:last-child
@@ -244,7 +274,7 @@ p.post-item
 		width: 450px;
 		margin: 0 1%;
 		padding: 1.5%;
-		background: #333;
+		background: rgba(40,40,40,0.8);
 		min-height: 250px;
 		position: absolute;
 		z-index: 1001;
@@ -327,12 +357,10 @@ p.post-item
 
 	.post-item
 	{
-		width: 80%;
 		float: left;
 		clear: left;
-		margin: 0;
 		margin-bottom: 20px;
-		padding: 0 10%;
+		overflow: hidden;
 	}
 
 	.post-item:last-child
@@ -345,11 +373,6 @@ p.post-item
 	.post-item p
 	{
 		float: left;
-	}
-
-	.post-item h1
-	{
-		left: 10%;
 	}
 }
 
