@@ -73,7 +73,7 @@
 ?>
         <div class="post-item <?php echo $sub_category; ?>" id="post-<?php the_ID(); ?>">
           <div class="overlay">
-          	<span class="plus">+</span>
+          	<span class="plus"><i class="fa fa-camera"></i></span>
           </div>
           <?php the_post_thumbnail(); ?>
           <h1 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>

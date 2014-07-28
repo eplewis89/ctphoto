@@ -6,6 +6,12 @@ $(document).ready(function() {
 	SetupMenu();
 
 	$(window).trigger('resize');
+
+	$('.background img').animate({
+			opacity: 1
+		}, 4000, function() {
+		// Animation complete.
+	});
 });
 
 $(window).load(function() {
