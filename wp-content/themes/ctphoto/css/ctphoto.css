@@ -73,7 +73,8 @@ footer
 }
 
 .grid,
-.about
+.about,
+.contact
 {
 	width: 80%;
 	margin: 30px 10%;
@@ -82,10 +83,91 @@ footer
 	position: relative;
 }
 
-.about
+.about,
+.contact
 {
 	z-index: 1001;
 	height: 650px;
+}
+
+.contact input,
+.contact textarea
+{
+	width: 95%;
+	padding: 2.5%;
+	margin: 0;
+	margin-top: 5%;
+	border: 1px solid white;
+	background-color: #1e1e1e;
+	color: white;
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.contact input:active,
+.contact textarea:active
+{
+	outline: none;	
+    border: 1px solid darkcyan;
+}
+
+.contact textarea
+{
+    resize: none;
+    height: 195px;
+}
+
+.contact input[type="submit"]
+{
+	width: 70%;
+	max-width: 120px;
+	cursor: pointer;
+	border: 1px solid #ddd;
+}
+
+.contact input[type="submit"]:hover
+{
+	border: 1px solid darkcyan;
+	color: darkcyan;
+}
+
+.contact p
+{
+	padding: 0 5%;
+}
+
+.contact .screen-reader-response p
+{
+	color: red;
+	padding: 0 2.5%;
+	margin-top: 2.5%;
+}
+
+.contact .screen-reader-response ul
+{
+	display: none;
+}
+
+.contact .wpcf7-response-output
+{
+	display: none;
+}
+
+.contact .wpcf7-not-valid
+{
+	border: 1px solid red;
+}
+
+.contact span.wpcf7-not-valid-tip
+{
+	display: none;
+}
+
+.contactleft,
+.aboutright
+{
+	width: 95%;
+	max-width: 815px;
 }
 
 .background
@@ -208,6 +290,12 @@ p.post-item
 	width: 100%;
 }
 
+.attachment-post-thumbnail
+{
+	width: auto;
+	max-height: 500px;
+}
+
 .isotope-item
 {
     z-index: 2;
@@ -278,9 +366,9 @@ p.post-item
 		min-height: 250px;
 	}
 
-	.aboutright
+	.aboutright,
+	.contactleft
 	{
-		width: 450px;
 		margin: 0 1%;
 		padding: 1.5%;
 		background: rgba(40,40,40,0.8);
@@ -288,7 +376,41 @@ p.post-item
 		position: absolute;
 		z-index: 1001;
 		bottom: 50px;
+	}
+
+	.aboutright
+	{
 		right: 0;
+	}
+	
+	.contactleft
+	{
+		left: 0;
+	}
+
+	.slider .slide
+	{
+		position: initial;
+		max-height: 830px;
+	}
+	
+	.slider .slide img
+	{
+		position: absolute;
+		bottom: 0;
+	}
+
+	.wpcf7 .messageleft
+	{
+		float: left;
+		clear: left;
+		width: 50%;
+	}
+
+	.wpcf7 .messageright
+	{
+		float: left;
+		width: 50%;
 	}
 }
 
@@ -320,6 +442,11 @@ p.post-item
 		float: left;
 		clear: left;
 		width: 100%;
+	}
+
+	.contact
+	{
+		height: auto !important;
 	}
 }
 

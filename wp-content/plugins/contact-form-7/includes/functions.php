@@ -198,7 +198,7 @@ function wpcf7_load_js() {
 }
 
 function wpcf7_load_css() {
-	return apply_filters( 'wpcf7_load_css', WPCF7_LOAD_CSS );
+	//return apply_filters( 'wpcf7_load_css', WPCF7_LOAD_CSS );
 }
 
 function wpcf7_format_atts( $atts ) {

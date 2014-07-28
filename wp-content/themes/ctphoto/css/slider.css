@@ -176,6 +176,7 @@ body .slider *
 /* Slider Text Content Container Style */
 .slider .slide_content_wrap
 {
+    width: 50%;
     max-width:1280px;
     position: absolute;
     left:0;

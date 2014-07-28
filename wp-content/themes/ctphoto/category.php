@@ -73,7 +73,13 @@
 ?>
         <div class="post-item <?php echo $sub_category; ?>" id="post-<?php the_ID(); ?>">
           <div class="overlay">
-          	<span class="plus"><i class="fa fa-camera"></i></span>
+          	<span class="plus">
+              <?php if (get_cat_name($curr_cat_id) == "Gallery") { ?>
+                <i class="fa fa-camera"></i>
+              <?php } else if (get_cat_name($curr_cat_id) == "Videos") { ?>
+                <i class="fa fa-youtube-play"></i>
+              <?php } ?>
+            </span>
           </div>
           <?php the_post_thumbnail(); ?>
           <h1 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>

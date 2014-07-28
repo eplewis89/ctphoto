@@ -96,7 +96,7 @@
 		wp_enqueue_script( 'isotope', "{$_url}/js/isotope.js" );
 		wp_enqueue_script( 'debounced', "{$_url}/js/debounced.js" );
 		wp_enqueue_script( 'menu', "{$_url}/js/menu.js" );
-		wp_enqueue_script( 'slider', "{$_url}/js/slider.js" );
+		//wp_enqueue_script( 'slider', "{$_url}/js/slider.js" );
 		wp_enqueue_script( 'portfolio', "{$_url}/js/portfolio.js" );
 		wp_enqueue_script( 'ctphoto', "{$_url}/js/ctphoto.js" );
 	}

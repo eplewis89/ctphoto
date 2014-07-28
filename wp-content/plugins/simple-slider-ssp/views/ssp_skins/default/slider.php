@@ -2,11 +2,14 @@
 /**
 Plugin Name: Default Skin
 **/
+
+$index = 0;
+
 ?>
 <div class="slider" id="slider">
 	<div class="slider_container">
 	<?php foreach( $slides as $slide ):	?>
-	<div class="slide">
+	<div class="slide slide-numero-<?php echo $index; ?>">
 		<img src="<?php echo $slide['image']['url']; ?>" alt="<?php echo $slide['image']['alt'] ?>" />
 		<div class="slide_content">
 			<div class="slide_content_wrap">
@@ -18,7 +21,11 @@ Plugin Name: Default Skin
 			</div>
 		</div>
 	</div>
-	<?php endforeach; ?>
+	<?php 
+		$index++;
+		
+		endforeach;
+	?>
 	</div>
 	<?php if (count($slides) > 1) { ?>
 		<div class="slidePrev"><i class="fa fa-chevron-left"></i></div>
