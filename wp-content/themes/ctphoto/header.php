@@ -5,7 +5,7 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<link rel="icon" type="image/png" href="<?php echo get_site_url(); ?>/favicon.png">
 
-	<title><?php if(is_home()) bloginfo('name'); else wp_title('Chris Thomas Photo | '); ?></title>
+	<title><?php wp_title('Chris Thomas Photo | '); //the_title('Chris Thomas Photo | '); ?></title>
 
 	<style type="text/css" media="screen">
 		@import url( <?php bloginfo('stylesheet_url'); ?> );
@@ -22,7 +22,7 @@
 	?>
 	
 	<script type="text/javascript">
-		console.log('<?php echo $_SERVER['REQUEST_URI']; ?>');
+		currentpage = '<?php echo $_SERVER['REQUEST_URI']; ?>';
 	</script>
 </head>
 

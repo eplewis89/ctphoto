@@ -74,17 +74,58 @@ $(window).resize(function(){
 
 function SetupSlideshow() {
 	// to do: custom script for slideshow
-	$('.slide:first-child').fadeIn(1500, function() {
-		$(this).find('.slide_content_wrap').show();
-		setTimeout(function() {	$(this).find('.slide_content_wrap .title').fadeIn(1000); }, 300);
-		setTimeout(function() { $(this).find('.slide_content_wrap .description').fadeIn(1000); }, 600);
-		setTimeout(function() { $(this).find('.slide_content_wrap .readmore').fadeIn(1000); }, 900);
-	});
+	$('.slide:first-child').fadeIn(2000, 'easeInSine', function() {});
+
+	setTimeout(function() {
+		var wrap = $('.slide:first-child').find('.slide_content_wrap');
+
+		$(wrap).show();
+
+		$(wrap).find('.title').animate({ opacity: 1 }, { queue: false, duration: 1000, easing: 'easeInSine' });
+
+		setTimeout(function() { $(wrap).find('.description').animate({ opacity: 1 }, { queue: false, duration: 1000, easing: 'easeInSine' }) }, 300);
+		setTimeout(function() { $(wrap).find('.readmore').animate({ opacity: 1 }, { queue: false, duration: 1000, easing: 'easeInSine' }) }, 600);
+	}, 300);
+
+	if($('.slider_container > div').length > 1) {
+		$.each($('.slide'), function() {
+			$('.bullets').append('<div class="bullet"><i class="fa fa-circle indicators"></i></div>');
+		});
+
+		$('.bullets .bullet:first-child').addClass('active');
+
+		$('.indicators').fadeIn(2000, 'easeInSine', function () {});
+	}
+}
+
+function NextSlide()
+{
+
+}
+
+function PrevSlide()
+{
+
+}
+
+function ShowSlide(wrap)
+{
+	$(wrap).find('.slide_content_wrap').show();
+
+	$(wrap).find('.title').animate({ opacity: 1 }, { queue: false, duration: 1000, easing: 'easeInSine' });
+
+	setTimeout(function() { $(wrap).find('.description').animate({ opacity: 1 }, { queue: false, duration: 1000, easing: 'easeInSine' }) }, 300);
+	setTimeout(function() { $(wrap).find('.readmore').animate({ opacity: 1 }, { queue: false, duration: 1000, easing: 'easeInSine' }) }, 600);
 }
 
 function SetupMenu() {
 	if (currentpage != '') {
-		$('nav * a').removeClass('active');
-		$('a[href=$"/' + currentpage + '/"]').addClass('active');
+		$('nav * li').removeClass('active');
+
+		$('li a[href$="' + currentpage + '"]').parent().addClass('active');
+
+		if($('ul > li.active').parent().hasClass('sub-menu')) {
+			$('ul > li.active').parent().parent().addClass('active');
+		}
 	}
 }

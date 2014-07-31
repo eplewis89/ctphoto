@@ -399,8 +399,6 @@ class WPCF7_ContactForm {
 
 		$this->responses_count += 1;
 
-		$output = str_replace("<p></p>", "", $output);
-
 		return $output;
 	}
 
@@ -415,7 +413,7 @@ class WPCF7_ContactForm {
 			$submission = WPCF7_Submission::get_instance();
 
 			if ( $response = $submission->get_response() ) {
-				$content = '<p>' . esc_html( $response ) . '</p>';
+				$content = esc_html( $response );
 			}
 
 			if ( $invalid_fields = $submission->get_invalid_fields() ) {
@@ -486,8 +484,6 @@ class WPCF7_ContactForm {
 
 		$form = $manager->do_shortcode( $form );
 		$this->scanned_form_tags = $manager->get_scanned_tags();
-
-		$form = str_replace("<p></p>", "", $form);
 
 		return $form;
 	}

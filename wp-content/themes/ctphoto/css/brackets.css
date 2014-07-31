@@ -1,10 +1,3 @@
-a:hover,
-a.active
-{
-	color: darkcyan !important;
-	text-decoration: line-through !important;
-}
-
 .post-filter a::before,
 .post-filter a::after,
 nav a::before,
@@ -37,6 +30,8 @@ nav a:focus::before,
 nav a:focus::after,
 nav li.active a::before, 
 nav li.active a::after,
+nav li.active li.active a::before, 
+nav li.active li.active a::after,
 .post-filter a.active::before,
 .post-filter a.active::after,
 nav li.active ul a:hover::before, 
@@ -72,4 +67,25 @@ nav li.active ul a::after
 	-webkit-transform: translateX(-20px);
 	-moz-transform: translateX(-20px);
 	transform: translateX(-20px);
+}
+
+.rmm ul li.active ul a
+{
+	color: #aaa;
+	text-decoration: none;
+}
+
+.rmm ul li.active a,
+.rmm ul ul li.active a
+{
+	color: darkcyan;
+	text-decoration: line-through;
+}
+
+a:hover,
+a.active
+nav li.active li.active a
+{
+	color: darkcyan !important;
+	text-decoration: line-through !important;
 }

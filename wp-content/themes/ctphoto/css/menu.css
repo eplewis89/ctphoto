@@ -221,18 +221,6 @@ rmm.minimal ul ul > a:hover
 	border-top:1px solid #333;
 }
 
-.rmm ul li.active a
-{
-	color: darkcyan;
-	text-decoration: line-through;
-}
-
-.rmm ul li.active ul a
-{
-	color: #aaa;
-	text-decoration: none;
-}
-
 @media all and (min-width: 830px)
 {
 	.rmm ul ul

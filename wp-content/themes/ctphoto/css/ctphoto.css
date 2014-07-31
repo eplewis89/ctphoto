@@ -158,9 +158,10 @@ footer
 	border: 1px solid red;
 }
 
-.contact span.wpcf7-not-valid-tip
+.contact #recaptcha_widget_div
 {
-	display: none;
+	width: 80%;
+	margin: 5% 10%;
 }
 
 .contactleft,
@@ -217,13 +218,14 @@ footer
 
 .post-item
 {
+	cursor: pointer;
 	float: left;
 	display: none;
 	margin-right: 20px;
 	margin-bottom: 20px;
 }
 
-.overlay *
+.post-item *
 {
 	cursor: pointer;
 }
@@ -236,15 +238,15 @@ footer
 	width: 100%;
 	color: transparent;
 	border: none;
-	background: rgba(0,0,0,0.3);
+	background-color: black;
     opacity: 0;
     -webkit-transition: opacity .25s ease;
 	-moz-transition: opacity .25s ease;
 }
 
-.overlay:hover
+.post-item:hover .overlay
 {
-	opacity: 1;
+	opacity: 0.5;
 }
 
 .plus
@@ -530,10 +532,10 @@ p.post-item
 	.gridleft, .gridright
 	{
 		float: left;
-		width: 97%;
+		width: 95%;
 		margin: 0;
 		margin-bottom: 30px;
-		padding: 1.5%;
+		padding: 2.5%;
 		background: #333;
 		min-height: 150px;
 	}
@@ -570,6 +572,12 @@ p.post-item
 		text-align: center;
 		margin: 5px 0;
 		padding: 0;
+	}
+
+	.contact #recaptcha_widget_div
+	{
+		width: 95%;
+		margin: 5% -10%;
 	}
 }
 

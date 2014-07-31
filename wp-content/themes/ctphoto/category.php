@@ -74,15 +74,11 @@
         <div class="post-item <?php echo $sub_category; ?>" id="post-<?php the_ID(); ?>">
           <div class="overlay">
           	<span class="plus">
-              <?php if (get_cat_name($curr_cat_id) == "Gallery") { ?>
-                <i class="fa fa-camera"></i>
-              <?php } else if (get_cat_name($curr_cat_id) == "Videos") { ?>
-                <i class="fa fa-youtube-play"></i>
-              <?php } ?>
+              <i class="fa fa-arrows-alt"></i>
             </span>
           </div>
           <?php the_post_thumbnail(); ?>
-          <h1 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+          <h1 class="postTitle"><?php the_title(); ?></h1>
         </div>
 
 <?php
@@ -91,7 +87,7 @@
     else
     {
 ?>
-      <p class="post-item">No posts here! Try again later.</p>
+      <p class="post-item">Nothing to display here!</p>
 <?php
     }
 ?>
