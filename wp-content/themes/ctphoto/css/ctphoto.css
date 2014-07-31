@@ -97,7 +97,7 @@ footer
 	padding: 2.5%;
 	margin: 0;
 	margin-top: 5%;
-	border: 1px solid white;
+	border: 1px solid #888;
 	background-color: #1e1e1e;
 	color: white;
 }
@@ -122,7 +122,6 @@ footer
 	width: 70%;
 	max-width: 120px;
 	cursor: pointer;
-	border: 1px solid #ddd;
 }
 
 .contact input[type="submit"]:hover
@@ -150,7 +149,11 @@ footer
 
 .contact .wpcf7-response-output
 {
-	display: none;
+	border: none;
+	float: left;
+	margin: 1% 2.5%;
+	padding: 0;
+	width: 95%;
 }
 
 .contact .wpcf7-not-valid
@@ -329,6 +332,11 @@ p.post-item
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
+}
+
+lightbox
+{
+	display: none;
 }
 
 @media all and (min-width: 830px)

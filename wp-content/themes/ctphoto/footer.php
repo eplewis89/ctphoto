@@ -5,6 +5,9 @@
 		<?php //wp_footer(); ?>
 	</footer>
 
+	<lightbox>
+		
+	</lightbox>
 </body>
 
 </html>

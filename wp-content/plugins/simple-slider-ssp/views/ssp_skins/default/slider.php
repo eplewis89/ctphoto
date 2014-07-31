@@ -29,8 +29,7 @@ $index = 0;
 	?>
 	</div>
 	<?php if (count($slides) > 1) { ?>
-		<div class="slidePrev"><i class="fa fa-chevron-left indicators"></i></div>
-		<div class="slideNext"><i class="fa fa-chevron-right indicators"></i></div>
-		<div class="bullets"></div>
+		<div class="slidePrev" onclick="PrevSlide();"><i class="fa fa-chevron-left indicators"></i></div>
+		<div class="slideNext" onclick="NextSlide();"><i class="fa fa-chevron-right indicators"></i></div>
 	<?php } ?>
 </div>

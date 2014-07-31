@@ -71,7 +71,7 @@
           }
         }
 ?>
-        <div class="post-item <?php echo $sub_category; ?>" id="post-<?php the_ID(); ?>">
+        <div class="post-item <?php echo $sub_category; ?>" id="post-<?php the_ID(); ?>" onclick="LoadGallery('<?php echo get_permalink(); ?>');">
           <div class="overlay">
           	<span class="plus">
               <i class="fa fa-arrows-alt"></i>
