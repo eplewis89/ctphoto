@@ -297,8 +297,8 @@ p.post-item
 
 .attachment-post-thumbnail
 {
-	width: auto;
-	max-height: 500px;
+	height: auto;
+	max-width: 500px;
 }
 
 .isotope-item
@@ -327,11 +327,14 @@ p.post-item
     transition-property: height, width;
 }
 
-.isotope .isotope-item
+.isotope div.isotope-item
 {
     -webkit-transition-property: -webkit-transform, opacity;
     -moz-transition-property: -moz-transform, opacity;
     transition-property: transform, opacity;
+    max-height: 350px;
+    max-width: 500px;
+    overflow: hidden;
 }
 
 lightbox

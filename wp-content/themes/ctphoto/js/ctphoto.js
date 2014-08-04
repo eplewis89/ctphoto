@@ -165,8 +165,8 @@ function LoadGallery(url)
         dataType: "html",
         success: function (success) {
         	$('lightbox').html(success);
-        	$('a[rel="lightbox"]').swipebox();
-        	$('a[rel="lightbox"]:first-child').click();
+        	$('a[data-rel="lightbox"]').swipebox();
+        	$('a[data-rel*="lightbox"]:first-child').click();
         }
     });
 }

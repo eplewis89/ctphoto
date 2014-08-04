@@ -228,6 +228,7 @@ rmm.minimal ul ul > a:hover
 		position: absolute;
 		top: 69px;
 		display: none;
+		min-width: 225px;
 	}
 }
 
