@@ -53,12 +53,11 @@
 	        array(
 	            'name'               => 'WordPress Slider Plugin',
 	            'slug'               => 'simple-slider-ssp',
-	            'source'             => get_stylesheet_directory() . '/lib/plugins/simple-slider-ssp.zip',
+	            'source'             => get_stylesheet_directory_uri() . '/lib/simple-slider-ssp.zip',
 	            'required'           => true,
 	            'version'            => '',
 	            'force_activation'   => false,
-	            'force_deactivation' => false,
-	            'external_url'       => ''
+	            'force_deactivation' => false
 	        ),
 	        array(
 	            'name'      => 'WP No Category Base',
